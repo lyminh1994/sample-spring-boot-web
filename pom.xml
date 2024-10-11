@@ -51,6 +51,11 @@
         </dependency>
         <dependency>
             <groupId>org.webjars.npm</groupId>
+            <artifactId>popperjs__core</artifactId>
+            <version>2.11.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
             <artifactId>htmx.org</artifactId>
             <version>2.0.2</version>
         </dependency>
