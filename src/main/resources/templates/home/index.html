@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en" th:replace="~{layout :: layout(~{::title}, _, _, ~{::body})}">
+    <head>
+        <title>[[#{home.index.headline}]]</title>
+    </head>
+    <body>
+        <div>
+            <h1 class="mb-4">[[#{home.index.headline}]]</h1>
+            <p>[(#{home.index.text})]</p>
+            <p class="mb-5">
+                <span>[[#{home.index.swagger}]]</span>
+                <a th:href="@{/swagger-ui.html}" target="_blank">[[#{home.index.swagger.link}]]</a>.
+            </p>
+        </div>
+    </body>
+</html>
