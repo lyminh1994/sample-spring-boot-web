@@ -1,6 +1,5 @@
 package dev.hobie.pet_clinic.config;
 
-import java.io.File;
 import java.util.Objects;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Configuration;

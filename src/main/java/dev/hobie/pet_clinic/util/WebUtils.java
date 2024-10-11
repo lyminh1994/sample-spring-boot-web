@@ -1,6 +1,7 @@
 package dev.hobie.pet_clinic.util;
 
 import jakarta.servlet.http.HttpServletRequest;
+import java.util.Locale;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -22,10 +23,20 @@ public class WebUtils {
   }
 
   public static HttpServletRequest getRequest() {
-    return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+    if (RequestContextHolder.getRequestAttributes()
+        instanceof ServletRequestAttributes requestAttributes) {
+      return requestAttributes.getRequest();
+    }
+
+    return null;
   }
 
   public static String getMessage(final String code, final Object... args) {
-    return messageSource.getMessage(code, args, code, localeResolver.resolveLocale(getRequest()));
+    var request = getRequest();
+    if (request != null) {
+      return messageSource.getMessage(code, args, code, localeResolver.resolveLocale(request));
+    }
+
+    return messageSource.getMessage(code, args, code, Locale.ENGLISH);
   }
 }

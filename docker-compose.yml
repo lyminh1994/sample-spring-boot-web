@@ -1,9 +1,0 @@
-services:
-  postgres:
-    image: bitnami/postgresql:latest
-    environment:
-    - POSTGRESQL_DATABASE=pet_clinic
-    - POSTGRESQL_USERNAME=postgres
-    - POSTGRESQL_PASSWORD=P4ssword!
-    ports:
-    - "5433:5432"
