@@ -9,9 +9,9 @@
         <relativePath/><!-- lookup parent from repository -->
     </parent>
     <groupId>dev.hobie</groupId>
-    <artifactId>pet-clinic</artifactId>
+    <artifactId>sample-spring-boot-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pet-clinic</name>
+    <name>sample-spring-boot-web</name>
 
     <properties>
         <java.version>17</java.version>

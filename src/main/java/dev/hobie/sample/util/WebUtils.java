@@ -1,4 +1,4 @@
-package dev.hobie.pet_clinic.util;
+package dev.hobie.sample.util;
 
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package dev.hobie.pet_clinic.config;
+package dev.hobie.sample.config;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;

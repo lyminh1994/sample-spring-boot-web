@@ -1,4 +1,4 @@
-package dev.hobie.pet_clinic.config;
+package dev.hobie.sample.config;
 
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.web.bind.WebDataBinder;

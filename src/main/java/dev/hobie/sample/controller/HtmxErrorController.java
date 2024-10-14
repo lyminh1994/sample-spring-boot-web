@@ -1,4 +1,4 @@
-package dev.hobie.pet_clinic.controller;
+package dev.hobie.sample.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

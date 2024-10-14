@@ -1,12 +1,12 @@
-package dev.hobie.pet_clinic;
+package dev.hobie.sample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PetClinicApplication {
+public class SampleApplication {
 
   public static void main(final String[] args) {
-    SpringApplication.run(PetClinicApplication.class, args);
+    SpringApplication.run(SampleApplication.class, args);
   }
 }

@@ -1,4 +1,4 @@
-package dev.hobie.pet_clinic.config;
+package dev.hobie.sample.config;
 
 import java.util.Objects;
 import lombok.SneakyThrows;

@@ -1,4 +1,4 @@
-package dev.hobie.pet_clinic.controller;
+package dev.hobie.sample.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
