@@ -1,11 +1,16 @@
 pipeline {
-    agent {
-        label 'raspberry-pi-agent'
-    }
+    agent none
     stages {
-        stage('Build') { 
+        stage('Build') {
+            agent { label 'raspberry-pi-agent' }
             steps {
                 sh './mvnw clean package' 
+            }
+        }
+        stage('Test') {
+            agent { label 'raspberry-pi-agent' }
+            steps {
+                bat './mvnw test'
             }
         }
     }
