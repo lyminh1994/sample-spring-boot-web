@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label raspberry-pi-agent
+        label 'raspberry-pi-agent'
     }
     stages {
         stage('Build') { 
