@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label raspberry-pi-agent
+    }
     stages {
         stage('Build') { 
             steps {
