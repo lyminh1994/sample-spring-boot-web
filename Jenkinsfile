@@ -1,9 +1,9 @@
 pipeline {
-    agent { label 'raspberry-pi-agent' }
+    agent any
     stages {
-        stage('Clean') {
+        stage('Build') {
             steps {
-                sh './mvnw clean'
+                sh './mvnw clean install -DskipTests'
             }
         }
         stage('Test') {
@@ -11,7 +11,7 @@ pipeline {
                 sh './mvnw test'
             }
         }
-        stage('Build') {
+        stage('Deploy') {
             steps {
                 sh './mvnw package'
             }
