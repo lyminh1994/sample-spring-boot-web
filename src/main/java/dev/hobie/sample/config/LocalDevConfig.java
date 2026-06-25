@@ -1,7 +1,7 @@
 package dev.hobie.sample.config;
 
+import java.io.IOException;
 import java.util.Objects;
-import lombok.SneakyThrows;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.ClassPathResource;
@@ -13,8 +13,7 @@ import org.thymeleaf.templateresolver.FileTemplateResolver;
 @Profile("local")
 public class LocalDevConfig {
 
-  @SneakyThrows
-  public LocalDevConfig(final TemplateEngine templateEngine) {
+  public LocalDevConfig(final TemplateEngine templateEngine) throws IOException {
     final var applicationYml = new ClassPathResource("application.yml");
     if (applicationYml.isFile()) {
       var sourceRoot = applicationYml.getFile().getParentFile();
