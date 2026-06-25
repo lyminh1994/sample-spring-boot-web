@@ -10,3 +10,13 @@ error:
     full-stacktrace-http-statuses: 5xx
     log-levels:
       5xx: ERROR
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss}){blue} %clr([%X{traceId:-},%X{spanId:-}]){cyan} %clr(${LOG_LEVEL_PATTERN:-%5p}) %m%n"
+  file:
+    path: /app/logs
+    name: /app/logs/${spring.application.name}.log
+  level:
+    root: info
+    web: trace
+    dev.hobie.sample: debug
